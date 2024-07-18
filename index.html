@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PostHandler</title>
+    <meta
+      name="description"
+      content="PostHandler is a handy CRUD application for creating and editing posts. Easily create and edit your posts about your interests."
+    />
+    <meta
+      name="keywords"
+      content="PostHandler, CRUD application, post creation, post editing, VizorLabs, post management"
+    />
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./favicon_package_v0.16/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon_package_v0.16/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon_package_v0.16/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./favicon_package_v0.16/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="./favicon_package_v0.16/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="theme-color" content="#ffffff" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="page">
+    <header class="header">
+      <h1 class="header__title">PostHandler</h1>
+      <h2 class="header__subtitle">CRUD application by VizorLabs Company</h2>
+      <p class="header__text">
+        Create and edit your posts easily and quickly with our unique app :)
+      </p>
+    </header>
+    <main class="main">
+      <form class="form" action="#" method="post">
+        <div class="form__field">
+          <label class="form__label" for="title">Title:</label>
+          <input
+            class="form__title"
+            type="text"
+            name="title"
+            id="title"
+            placeholder="Enter a title..."
+            required
+          />
+        </div>
+        <div class="form__field">
+          <label class="form__label" for="body">Your post:</label>
+          <textarea
+            class="form__body"
+            name="body"
+            id="body"
+            placeholder="Enter a text..."
+            required
+          ></textarea>
+        </div>
+        <button class="form__button" type="submit">Add post</button>
+      </form>
+      <div class="posts-container" id="posts-container"></div>
+    </main>
+    <footer class="footer">
+      <p class="footer__text">&copy; 2024 VizorLabs. All rights reserved.</p>
+      <p class="footer__text">Contact us: info@vizorlabs.com</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
