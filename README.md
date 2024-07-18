@@ -1,4 +1,4 @@
-# Simple Post Management Application
+# PostHandler App
 
 This is a simple web application for managing posts. The application allows users to get, read, display, add, edit, and delete posts using the JSONPlaceholder API.
 
