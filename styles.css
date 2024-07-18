@@ -16,7 +16,7 @@
   color: #333;
 }
 
-/* header */
+/* Header */
 .header {
   padding: 20px;
   text-align: center;
@@ -26,22 +26,19 @@
 .header__title {
   font-size: 2.5em;
   margin-bottom: 10px;
-  color: #333;
 }
 
-.header__subtitle {
+.header__subtitle,
+.header__text {
   font-size: 1.5em;
   margin-bottom: 10px;
-  color: #555;
 }
 
 .header__text {
   font-size: 1.2em;
-  margin-bottom: 10px;
-  color: #666;
 }
 
-/* main */
+/* Main */
 .main {
   flex: 1;
   padding: 20px;
@@ -94,21 +91,68 @@
   border: none;
   border-radius: 5px;
   font-size: 1.2em;
-  background: #a8e2a6;
+  background: #66bb6a;
   color: white;
   cursor: pointer;
   transition: background 0.3s;
 }
 
 .form__button:hover {
-  background: #92d394;
+  background: #43a047;
 }
 
+/* Posts */
 .posts-container {
   margin-top: 20px;
 }
 
-/* footer */
+.post {
+  background: rgba(255, 255, 255, 0.8);
+  padding: 20px;
+  margin-bottom: 15px;
+}
+
+.post__title {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.post__body {
+  display: block;
+  font-size: 1.1em;
+  margin-bottom: 10px;
+  color: #444;
+}
+
+.post__edit-button,
+.post__delete-button,
+.post__save-button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background: none;
+  cursor: pointer;
+  margin-right: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding: 0;
+}
+
+.post__input-title,
+.post__input-body {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+  font-size: 1em;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Footer */
 .footer {
   padding: 10px;
   text-align: center;
