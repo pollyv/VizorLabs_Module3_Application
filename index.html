@@ -48,11 +48,11 @@
       </p>
     </header>
     <main class="main">
-      <form class="form" action="#" method="post">
+      <form class="form" action="#" method="post" novalidate>
         <div class="form__field">
           <label class="form__label" for="title">Title:</label>
           <input
-            class="form__title"
+            class="input"
             type="text"
             name="title"
             id="title"
@@ -63,16 +63,18 @@
         <div class="form__field">
           <label class="form__label" for="body">Your post:</label>
           <textarea
-            class="form__body"
+            class="input input--textarea"
             name="body"
             id="body"
             placeholder="Enter a text..."
             required
           ></textarea>
         </div>
-        <button class="form__button" type="submit">Add post</button>
+        <button class="btn btn--submit" type="submit">Add post</button>
       </form>
+      <div class="loader is-hidden" id="loader"></div>
       <div class="posts-container" id="posts-container"></div>
+      <button class="btn btn--load-more" id="load-more">Load more</button>
     </main>
     <footer class="footer">
       <p class="footer__text">&copy; 2024 VizorLabs. All rights reserved.</p>

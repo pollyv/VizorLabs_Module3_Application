@@ -61,8 +61,8 @@
   color: #444;
 }
 
-.form__title,
-.form__body {
+/* Стили для полей ввода */
+.input {
   width: 100%;
   padding: 10px;
   border: 1px solid #ddd;
@@ -72,33 +72,75 @@
   color: #333;
 }
 
-.form__body {
+.input--textarea {
   height: 250px;
-  font-family: inherit;
   resize: none;
 }
 
-.form__title:focus,
-.form__body:focus {
+.input:focus {
   outline: none;
   background: white;
   border-color: #bbb;
 }
 
-.form__button {
-  width: 100%;
-  padding: 10px;
+.input--error {
+  border-color: red;
+}
+
+/* Общие стили для кнопок */
+.btn {
+  display: inline-block;
+  padding: 10px 20px;
   border: none;
   border-radius: 5px;
   font-size: 1.2em;
-  background: #66bb6a;
-  color: white;
   cursor: pointer;
   transition: background 0.3s;
 }
 
-.form__button:hover {
+.btn--submit {
+  background: #66bb6a;
+  color: white;
+}
+
+.btn--submit:hover {
   background: #43a047;
+}
+
+.btn--load-more {
+  background: #1976d2;
+  color: white;
+  margin: 20px auto;
+  display: block;
+}
+
+.btn--load-more:hover {
+  background: #1565c0;
+}
+
+.btn--disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+/* Лоадер */
+.loader {
+  border: 4px solid #f3f3f3;
+  border-top: 4px solid #3498db;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  animation: spin 1s linear infinite;
+  margin: 20px auto;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
 
 /* Posts */
@@ -188,4 +230,16 @@
 
 .footer__text {
   margin: 5px 0;
+}
+
+/* Сообщения об ошибке */
+.error-message {
+  color: red;
+  margin-top: 10px;
+  font-size: 1em;
+}
+
+/* Скрытые элементы */
+.is-hidden {
+  display: none;
 }
